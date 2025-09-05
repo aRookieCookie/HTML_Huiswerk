@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 1</title>
+    <style>
+        /*Achtergrond kleur*/
+        body {
+            background-color: #B4EDD2;
+        }
+
+        /*default font*/
+        .default {
+            color: #9A7AA0;
+            font-family: "Comic Sans MS";
+        }
+
+        /*Sidebar*/
+        .sidebar:hover {
+            background-color: #68a6aa;
+            top: 0;
+            right: 0;
+            transform-origin: right;
+            width: 300px;
+            height: 1200px;
+            position: fixed;
+        }
+
+        /*Standaard dat sidebar content niet zichtbaar is tot hover*/
+        .sidebarContent {
+            display: none;
+            font-size: 50px;
+        }
+
+        /*show sidebar content when hovering*/
+        .sidebar:hover .sidebarContent {
+            display: block;
+            transition: all 0.3s linear;
+        }
+
+        /*Sidebar Settings*/
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 100%;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: right;
+            padding-right: 20px;
+            padding-top: 8px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /*Collum Flex Container (For pictures)*/
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            float: right;
+        }
+
+        /*Clears Div*/
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Titel-->
+<div class="default" style="color: #87677B;">
+    <h1 style="float:left">Huiswerk Week 1</h1>
+</div>
+
+<!--Sidebar -->
+<div class="sidebar">
+    <h1>☰</h1>
+    <div class="sidebarContent" style="background-color: #68a6aa;">
+        <ul style="list-style: none;">
+            <li style="margin-bottom: 30px;"><b>Week 1</b></li>
+            <li style="margin-bottom: 30px;"><a href="week2.html">Week 2</a></li>
+            <li style="margin-bottom: 30px;"><a href="week3.html">Week 3</a></li>
+            <li style="margin-bottom: 300px;"><a href="week4.html">Week 4</a></li>
+            <li style="margin-bottom: 30px; font-size: 20px"><a href="https://gist.github.com/MattIPv4/045239bc27b16b2bcf7a3a9a4648c08a" target="_blank">Bee Movie Script</a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="clear" style="color: #9A7AA0;">
+        <hr>
+    </div>
+
+    <pre class="default"
+         style="float:left; background-color: #A0CFD3; width: 750px; padding-bottom:10px; padding-top:10px;">
+    Heyy,<br>
+    Ik ben Thijmen en ben 17 jaar.
+    Ik werk al 2,5jaar bij McDonald's, en ben sinds 1 Augustus Crewtrainer.
+    Voetbal en gamen vind ik ook enorm leuk.
+    Overigens in mij vrije tijd ben ik graag met mijn vrienden (meestal is er alcohol betrokken. 😉 )
+</pre>
+
+    <div style="float: right; margin-left: 5px; background-color: #A0CFD3; padding: 10px;">
+        <img src="media/img.png" height="490">
+    </div>
+
+    <div class="flex-container" ; style="background-color: #A0CFD3; padding:10px">
+        <img src="media/img_1.png" height="240">
+        <img src="media/img_2.png" height="240">
+    </div>
+
+
+</body>
+</html>
